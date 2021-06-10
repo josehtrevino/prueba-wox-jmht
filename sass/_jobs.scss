@@ -1,0 +1,56 @@
+.jobs {
+  padding: 1rem 2rem 1rem 5rem;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: 1rem;
+  }
+
+  .job {
+    background-color: #eee;
+
+    &__image {
+      height: 8rem;
+      width: 8rem;
+      margin: 1rem auto;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__info {
+      padding: 1.5rem;
+
+      p {
+        font-size: 0.6rem;
+      }
+
+      &--location {
+        margin-top: 0.3rem;
+      }
+    }
+
+    &__reward {
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+
+      p:first-of-type {
+        font-size: 1.1rem;
+      }
+
+      p:last-of-type {
+        font-size: 0.5rem;
+      }
+
+      &--btn {
+        display: block;
+        border-radius: 50%;
+        width: 2rem;
+        border: 1px solid blue;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+h2 {
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.header {
+  padding: 1.5rem 2.5rem;
+  width: 100%;
+}
+
+.header__logo {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header__nav {
+  position: relative;
+}
+
+.header__nav--links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.header__nav--links li {
+  margin-right: 1.5rem;
+}
+
+.header__nav--links li a {
+  text-decoration: none;
+}
+
+.header__hero {
+  margin-top: 10rem;
+  padding: 0 2.5rem;
+  width: 50%;
+}
+
+.header__hero p {
+  font-size: 0.5rem;
+  text-transform: uppercase;
+}
+
+.header__hero--input {
+  margin-top: 3rem;
+}
+
+.header__hero--input input {
+  padding: 1.2rem 2rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background-color: #eee;
+}
+
+.jobs {
+  padding: 1rem 2rem 1rem 5rem;
+}
+
+.jobs__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-gap: 1rem;
+}
+
+.jobs .job {
+  background-color: #eee;
+}
+
+.jobs .job__image {
+  height: 8rem;
+  width: 8rem;
+  margin: 1rem auto;
+}
+
+.jobs .job__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.jobs .job__info {
+  padding: 1.5rem;
+}
+
+.jobs .job__info p {
+  font-size: 0.6rem;
+}
+
+.jobs .job__info--location {
+  margin-top: 0.3rem;
+}
+
+.jobs .job__reward {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.jobs .job__reward p:first-of-type {
+  font-size: 1.1rem;
+}
+
+.jobs .job__reward p:last-of-type {
+  font-size: 0.5rem;
+}
+
+.jobs .job__reward--btn {
+  display: block;
+  border-radius: 50%;
+  width: 2rem;
+  border: 1px solid blue;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
