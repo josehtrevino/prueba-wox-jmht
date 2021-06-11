@@ -1,16 +1,26 @@
 .header {
-  padding: 1.5rem 2.5rem;
+  position: relative;
+  padding-left: 2.5rem;
   width: 100%;
+  height: 30rem;
+  background-color: $lightGray;
 
   &__logo {
     display: block;
+    font-size: 1.5rem;
+    color: $purple;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 2rem;
+    left: 2.5rem;
   }
 
   &__nav {
-    position: relative;
+    padding: 1.5rem;
+    width: 100%;
+    height: 25rem;
+    background-color: $purple;
+    clip-path: polygon(25% 0, 100% 0, 100% 95%, 27% 29%, 25.5% 26.5%, 25% 25%);
+    //clip-path: polygon(25% 0, 100% 0, 100% 95%, 27% 29%, 26% 28%, 25% 25%);
 
     &--links {
       display: flex;
@@ -18,35 +28,36 @@
       list-style: none;
 
       li {
-        margin-right: 1.5rem;
+        padding: 1rem 1.5rem;
+        position: relative;
+        transition: all 0.3s;
+
+        &:not(:last-child):hover:after {
+          position: absolute;
+          top: 3rem;
+          left: 0;
+          content: '';
+          background-color: $white;
+          width: 100%;
+          height: 0.05rem;
+          border: none;
+        }
+
+        &:nth-child(5) {
+          margin-left: 3rem;
+          margin-right: 1rem;
+        }
+
+        &:last-of-type {
+          background-color: $darkPurple;
+          border-radius: 25px;
+        }
 
         a {
           text-decoration: none;
+          font-size: 0.75rem;
+          color: $white;
         }
-      }
-    }
-  }
-
-  &__hero {
-    margin-top: 10rem;
-    padding: 0 2.5rem;
-    width: 50%;
-
-    p {
-      font-size: 0.5rem;
-      text-transform: uppercase;
-    }
-
-    &--input {
-      margin-top: 3rem;
-
-      input {
-        padding: 1.2rem 2rem;
-        width: 100%;
-        outline: none;
-        border: none;
-        border-radius: 20px;
-        background-color: #eee;
       }
     }
   }

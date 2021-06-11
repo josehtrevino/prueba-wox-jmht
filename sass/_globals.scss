@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
+// Global styling
 *,
 *::after,
 *::before {
@@ -15,22 +16,29 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  color: $black;
 }
 
 h1 {
   font-weight: 400;
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 2.5rem;
 }
 
 h2 {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
+  color: rgba($gray, 0.7);
+  font-weight: 700;
 }
 
 h3 {
   font-size: 0.8rem;
   margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none;
 }

@@ -1,5 +1,13 @@
 .jobs {
+  background: linear-gradient(
+    to bottom,
+    $lightGray 0%,
+    $lightGray 50%,
+    $white 50%,
+    $white 100%
+  );
   padding: 1rem 2rem 1rem 5rem;
+
   &__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -7,12 +15,14 @@
   }
 
   .job {
-    background-color: #eee;
+    background-color: $white;
+    box-shadow: -2px 8px 20px rgba($black, 0.1);
 
     &__image {
-      height: 8rem;
-      width: 8rem;
-      margin: 1rem auto;
+      height: 7rem;
+      width: 7rem;
+      margin: 2rem auto;
+
       img {
         width: 100%;
         height: 100%;
@@ -21,13 +31,22 @@
 
     &__info {
       padding: 1.5rem;
+      border-top: 1px solid $lightGray;
 
-      p {
-        font-size: 0.6rem;
+      p:first-of-type {
+        font-size: 0.7rem;
+        color: rgba($gray, 0.7);
+        font-weight: 700;
       }
 
-      &--location {
-        margin-top: 0.3rem;
+      p:last-of-type {
+        font-size: 0.5rem;
+        margin-top: 0.4rem;
+        color: rgba($gray, 0.5);
+
+        i {
+          color: rgba($gray, 0.7);
+        }
       }
     }
 
@@ -35,21 +54,45 @@
       padding: 1.5rem;
       display: flex;
       justify-content: space-between;
+      background-color: rgba($lightGray, 0.5);
 
       p:first-of-type {
         font-size: 1.1rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+        color: $darkPurple;
       }
 
       p:last-of-type {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
+        color: rgba($gray, 0.7);
       }
 
       &--btn {
-        display: block;
         border-radius: 50%;
-        width: 2rem;
-        border: 1px solid blue;
+        background-color: $white;
+        color: $darkPurple;
+        width: 2.5rem;
+        border: 1px solid $darkPurple;
         cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: $darkPurple;
+          color: $white;
+          box-shadow: 0 8px 10px rgba($darkPurple, 0.5);
+        }
+      }
+    }
+
+    &__recommend {
+      padding: 1.5rem;
+
+      p {
+        font-size: 0.6rem;
+        font-weight: 700;
+        width: 100%;
+        text-align: center;
       }
     }
   }

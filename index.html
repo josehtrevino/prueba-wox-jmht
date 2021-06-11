@@ -14,8 +14,8 @@
   </head>
   <body>
     <header class="header">
+      <a href="#" class="header__logo"><i class="fas fa-puzzle-piece"></i></a>
       <nav class="header__nav">
-        <a href="#" class="header__logo"><i class="fas fa-puzzle-piece"></i></a>
         <ul class="header__nav--links">
           <li><a href="#">HOME</a></li>
           <li><a href="#">ABOUT US</a></li>
@@ -25,20 +25,26 @@
           <li><a href="#">SIGN UP</a></li>
         </ul>
       </nav>
-      <div class="header__hero">
+      <div class="hero">
         <p>Innovative solution for sourcing candidates</p>
         <h1>
-          Help us <span>find the missing puzzle, get rewarded</span> properly
+          Help us
+          <strong>find the missing puzzle, get rewarded</strong> properly
         </h1>
-        <div class="header__hero--input">
+        <div class="hero__input">
           <input
             type="text"
             placeholder="keyword, job title or company"
             name="keyword"
           />
+          <span class="icon"><i class="fas fa-search"></i></span>
+        </div>
+        <div class="hero__image">
+          <img src="assets/business.svg" alt="business" />
         </div>
       </div>
     </header>
+
     <section class="jobs">
       <h2>Recently added jobs:</h2>
       <div class="jobs__container">
@@ -62,6 +68,9 @@
               <i class="fas fa-puzzle-piece"></i>
             </button>
           </div>
+          <div class="job__recommend hidden">
+            <p>Be the first one to recommend!</p>
+          </div>
         </article>
 
         <article class="job">
@@ -69,20 +78,23 @@
             <img src="assets/coca-cola.svg" alt="brand" />
           </div>
           <div class="job__info">
-            <h3>Art Director</h3>
-            <p>Hermès International S.A.</p>
+            <h3>HR Head of Operations</h3>
+            <p>The Coca-Cola Company</p>
             <p class="job__info--location">
-              <i class="fas fa-map-marker-alt"></i> Harrysburg, Pennsilvanya
+              <i class="fas fa-map-marker-alt"></i> Atlanta, Georgia
             </p>
           </div>
           <div class="job__reward">
             <div class="job__reward--desc">
-              <p>$1,240</p>
+              <p>$1,980</p>
               <p>of hiring reward</p>
             </div>
             <button class="job__reward--btn">
               <i class="fas fa-puzzle-piece"></i>
             </button>
+          </div>
+          <div class="job__recommend hidden">
+            <p>Be the first one to recommend!</p>
           </div>
         </article>
 
@@ -91,20 +103,23 @@
             <img src="assets/dropbox.svg" alt="brand" />
           </div>
           <div class="job__info">
-            <h3>Art Director</h3>
-            <p>Hermès International S.A.</p>
+            <h3>Business Strategy Associate</h3>
+            <p>Dropbox, Inc.</p>
             <p class="job__info--location">
-              <i class="fas fa-map-marker-alt"></i> Harrysburg, Pennsilvanya
+              <i class="fas fa-map-marker-alt"></i> San Francisco, California
             </p>
           </div>
           <div class="job__reward">
             <div class="job__reward--desc">
-              <p>$1,240</p>
+              <p>$3,100</p>
               <p>of hiring reward</p>
             </div>
             <button class="job__reward--btn">
               <i class="fas fa-puzzle-piece"></i>
             </button>
+          </div>
+          <div class="job__recommend hidden">
+            <p>Be the first one to recommend!</p>
           </div>
         </article>
 
@@ -113,20 +128,23 @@
             <img src="assets/mcdonalds.svg" alt="brand" />
           </div>
           <div class="job__info">
-            <h3>Art Director</h3>
-            <p>Hermès International S.A.</p>
+            <h3>Financial Analyst</h3>
+            <p>McDonald's Corporation</p>
             <p class="job__info--location">
-              <i class="fas fa-map-marker-alt"></i> Harrysburg, Pennsilvanya
+              <i class="fas fa-map-marker-alt"></i> Columbus, Ohio
             </p>
           </div>
           <div class="job__reward">
             <div class="job__reward--desc">
-              <p>$1,240</p>
+              <p>$2,600</p>
               <p>of hiring reward</p>
             </div>
             <button class="job__reward--btn">
               <i class="fas fa-puzzle-piece"></i>
             </button>
+          </div>
+          <div class="job__recommend hidden">
+            <p>Be the first one to recommend!</p>
           </div>
         </article>
       </div>
