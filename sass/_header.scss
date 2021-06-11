@@ -8,7 +8,7 @@
   &__logo {
     display: block;
     font-size: 1.5rem;
-    color: $purple;
+    color: $violet;
     position: absolute;
     top: 2rem;
     left: 2.5rem;
@@ -18,8 +18,8 @@
     padding: 1.5rem;
     width: 100%;
     height: 25rem;
-    background-color: $purple;
-    clip-path: polygon(25% 0, 100% 0, 100% 95%, 27% 29%, 25.5% 26.5%, 25% 25%);
+    background-color: $violet;
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 27% 29%, 25.5% 26.5%, 25% 25%);
     //clip-path: polygon(25% 0, 100% 0, 100% 95%, 27% 29%, 26% 28%, 25% 25%);
 
     &--links {
@@ -49,7 +49,7 @@
         }
 
         &:last-of-type {
-          background-color: $darkPurple;
+          background-color: $darkViolet;
           border-radius: 25px;
         }
 
